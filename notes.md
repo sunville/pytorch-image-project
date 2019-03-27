@@ -10,8 +10,8 @@ optimizer.step()
 #### Flow Graph
 Pytorch construct a flow graph while calculation.\
 It feed forward when you call forward().\
-It backpropagation when you call backward().\
-It learns (descent gradient) when you call step().\
+It backpropagation when you call backward(). Then the graph will be deleted. Unless retain_graph=True.\
+It learns (descent gradient) when you call step().
 
 #### nn.zero_grad()
 Empty the gradients at each node. Otherwise, the gradient will accumulate.
