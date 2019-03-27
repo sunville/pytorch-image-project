@@ -22,3 +22,6 @@ Just compute gradients!!!!
 
 #### optimizer.step()
 Do the gradient descent.
+
+#### tensor.detach()
+detach 的意思是，这个数据和生成它的计算图“脱钩”了，即梯度传到它那个地方就停了
