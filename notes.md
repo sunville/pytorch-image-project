@@ -32,3 +32,7 @@ detach 的意思是，这个数据和生成它的计算图“脱钩”了，即�
 >>>x.item()
 1.0
 ```
+
+#### dataloader
+Tensor must be FloatTensor
+
