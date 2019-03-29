@@ -222,13 +222,13 @@ if __name__ == '__main__':
 
     # to(device) move nn to the device
     netG = Generator(args["gpu"]).to(device)
-    # netG.apply(weights_init)
+    netG.apply(weights_init)
     print(netG)
     netD = Discriminator(args["gpu"]).to(device)
-    # netD.apply(weights_init)
+    netD.apply(weights_init)
     print(netD)
-    netG.load_state_dict(torch.load(os.path.join(args["checkpoint_dir"],"generator.pkl")))
-    netD.load_state_dict(torch.load(os.path.join(args["checkpoint_dir"],"discriminator.pkl")))
+    # netG.load_state_dict(torch.load(os.path.join(args["checkpoint_dir"],"generator.pkl")))
+    # netD.load_state_dict(torch.load(os.path.join(args["checkpoint_dir"],"discriminator.pkl")))
     #    if args["load"] == True:
     #        netG.eval()
     #        netD.eval()
